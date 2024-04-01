@@ -24,7 +24,7 @@ def add_task():
         if task not in tasks:
             tasks.append(task)
             update_listbox()
-            txt_input.delete(0, "end")  # Input alanını temizle
+            txt_input.delete(0, "end")
         else:
             tkinter.messagebox.showwarning("Warning", "This task is already in the list.")
     else:
